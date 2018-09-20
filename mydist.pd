@@ -1,0 +1,40 @@
+#N canvas 848 956 451 341 10;
+#X obj 28 148 tanh~;
+#X obj 28 122 *~;
+#X obj 29 71 bp~ 100 1;
+#X obj 29 229 bp~ 100 1;
+#X obj 27 267 tanh~;
+#X obj 28 -3 inlet~;
+#X obj 27 303 outlet~;
+#X obj 207 123 hsl 100 20 20 2000 1 0 \$0-pre-freq \$1-pre-freq empty
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 207 148 hsl 100 20 1 20 1 0 \$0-pre-q \$1-pre-q empty -2 -8
+0 10 -262144 -1 -1 0 1;
+#X obj 207 173 hsl 100 20 1 1000 1 0 \$0-dist \$1-dist empty -2 -8
+0 10 -262144 -1 -1 0 1;
+#X text 257 123 pre freq;
+#X text 274 148 pre q;
+#X text 283 174 dist;
+#X obj 207 198 hsl 100 20 20 2000 1 0 \$0-post-freq \$1-post-freq empty
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 207 223 hsl 100 20 1 20 1 0 \$0-post-q \$1-post-q empty -2 -8
+0 10 -262144 -1 -1 0 1;
+#X text 252 199 post freq;
+#X text 269 224 post q;
+#X obj 53 23 r \$0-pre-freq;
+#X obj 80 47 r \$0-pre-q;
+#X obj 43 98 r \$0-dist;
+#X obj 54 170 r \$0-post-freq;
+#X obj 81 194 r \$0-post-q;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 5 0 2 0;
+#X connect 17 0 2 1;
+#X connect 18 0 2 2;
+#X connect 19 0 1 1;
+#X connect 20 0 3 1;
+#X connect 21 0 3 2;
+#X coords 0 -1 1 1 115 150 1 200 100;

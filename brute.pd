@@ -1,0 +1,42 @@
+#N canvas 291 452 408 446 10;
+#X obj 37 247 noise~;
+#X obj 209 152 hsl 128 15 2000 20000 0 1 \$0-granularity \$1-granularity
+empty -2 -8 0 10 -262144 -1 -1 6300 1;
+#X obj 37 301 *~;
+#X obj 36 348 osc~;
+#X obj 36 326 bp~ 900 45;
+#X obj 208 181 hsl 128 15 268 10 0 1 \$0-brutality \$1-brutality empty
+-2 -8 0 10 -262144 -1 -1 3400 1;
+#X obj 63 141 inlet;
+#X text 203 193 brutality;
+#X text 202 162 granularity;
+#X obj 36 399 outlet~;
+#X obj 65 222 line;
+#X obj 63 193 f;
+#X obj 63 164 t b b f;
+#X obj 92 195 f 100;
+#X obj 209 124 hsl 128 15 10 1000 0 1 \$0-porta \$1-porta empty -2
+-8 0 10 -262144 -1 -1 900 1;
+#X text 203 135 portamento;
+#X obj 197 24 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 36 373 tanh~;
+#X obj 52 273 r \$0-granularity;
+#X obj 93 304 r \$0-brutality;
+#X obj 119 165 r \$0-porta;
+#X connect 0 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 17 0;
+#X connect 4 0 3 0;
+#X connect 6 0 12 0;
+#X connect 10 0 4 1;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 12 1 13 0;
+#X connect 12 2 11 1;
+#X connect 13 0 10 1;
+#X connect 17 0 9 0;
+#X connect 18 0 2 1;
+#X connect 19 0 4 2;
+#X connect 20 0 13 1;
+#X coords 0 -1 1 1 145 115 1 200 100;

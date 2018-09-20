@@ -1,0 +1,744 @@
+#N canvas 640 589 210 197 10;
+#X obj 85 14 bng 60 250 50 0 empty empty empty 0 -6 0 8 -105728 -1
+-1;
+#X obj 85 82 s rndctl;
+#X floatatom 85 106 8 3 6 0 - - -;
+#X obj 84 126 s midich;
+#N canvas 566 378 915 330 filter 0;
+#X floatatom 117 136 2 0 0 0 - midich -;
+#X obj 57 98 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 57 76 spigot;
+#X obj 56 3 r rndctl;
+#X obj 95 30 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 58 117 random 127;
+#X obj 18 4 vsl 30 175 0 127 0 0 empty cutoff empty 0 -8 0 8 -259674
+-1 -1 11300 0;
+#X obj 58 154 ctlout 74;
+#X text 68 172 cutoff;
+#X floatatom 258 138 2 0 0 0 - midich -;
+#X obj 198 100 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 198 78 spigot;
+#X obj 197 5 r rndctl;
+#X obj 236 32 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 199 119 random 127;
+#X obj 159 6 vsl 30 175 0 127 0 0 empty resonance empty 0 -8 0 8 -259674
+-1 -1 1500 0;
+#X obj 199 156 ctlout 42;
+#X text 200 174 resonance;
+#X floatatom 390 138 2 0 0 0 - midich -;
+#X obj 330 100 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 330 78 spigot;
+#X obj 329 5 r rndctl;
+#X obj 368 32 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 331 119 random 127;
+#X obj 291 6 vsl 30 175 0 127 0 0 empty filtenv empty 0 -8 0 8 -259674
+-1 -1 13200 0;
+#X obj 331 156 ctlout 43;
+#X text 341 174 env amt;
+#X floatatom 513 141 2 0 0 0 - midich -;
+#X obj 453 103 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 453 81 spigot;
+#X obj 452 8 r rndctl;
+#X obj 491 35 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 454 122 random 127;
+#X obj 414 9 vsl 30 175 0 127 0 0 empty fa empty 0 -8 0 8 -258699 -1
+-1 1000 0;
+#X floatatom 640 140 2 0 0 0 - midich -;
+#X obj 580 102 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 580 80 spigot;
+#X obj 579 7 r rndctl;
+#X obj 618 34 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 581 121 random 127;
+#X obj 541 8 vsl 30 175 0 127 0 0 empty fd empty 0 -8 0 8 -258699 -1
+-1 2300 0;
+#X floatatom 762 141 2 0 0 0 - midich -;
+#X obj 702 103 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 702 81 spigot;
+#X obj 701 8 r rndctl;
+#X obj 740 35 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 703 122 random 127;
+#X obj 663 9 vsl 30 175 0 127 0 0 empty fs empty 0 -8 0 8 -258699 -1
+-1 2100 0;
+#X floatatom 886 141 2 0 0 0 - midich -;
+#X obj 826 103 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 826 81 spigot;
+#X obj 825 8 r rndctl;
+#X obj 864 35 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 827 122 random 127;
+#X obj 787 9 vsl 30 175 0 127 0 0 empty fr empty 0 -8 0 8 -258699 -1
+-1 13700 0;
+#X text 464 177 attack;
+#X text 592 176 decay;
+#X text 713 177 sustain;
+#X text 837 177 release;
+#X obj 454 159 ctlout 38;
+#X obj 581 158 ctlout 39;
+#X obj 704 159 ctlout 40;
+#X obj 827 159 ctlout 41;
+#X floatatom 316 231 2 0 0 0 - midich -;
+#X floatatom 76 252 2 0 0 0 - midich -;
+#X obj 18 252 tgl 15 0 empty empty empty 0 -6 0 8 -258049 -1 -1 0 1
+;
+#X text 259 268 kbd track;
+#X text 17 288 distortion;
+#X obj 258 249 ctlout 46;
+#X obj 18 270 ctlout 80;
+#X floatatom 77 194 2 0 0 0 - midich -;
+#X obj 18 195 tgl 15 0 empty empty empty 0 -6 0 8 -258049 -1 -1 0 1
+;
+#X obj 19 212 ctlout 45;
+#X text 18 230 velocity;
+#X text 215 231 off;
+#X text 214 246 1/3;
+#X text 215 262 2/3;
+#X text 209 277 full;
+#X obj 239 232 vradio 15 1 0 4 empty empty empty 0 -6 0 8 -258049 -1
+-1 0;
+#X floatatom 491 265 2 0 0 0 - midich -;
+#X obj 433 283 ctlout 44;
+#X text 628 231 notch;
+#X obj 510 247 hradio 30 1 0 5 empty empty empty 0 -6 0 8 -259674 -1
+-1 0;
+#X text 542 280 filter mode;
+#X text 509 231 LP12;
+#X text 540 231 LP24;
+#X text 577 231 HP;
+#X text 606 231 BP;
+#X obj 410 263 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 410 241 spigot;
+#X obj 469 222 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 397 220 r rndctl;
+#X obj 429 262 random 5;
+#X floatatom 107 100 3 0 127 0 - - -;
+#X floatatom 249 100 3 0 127 0 - - -;
+#X floatatom 379 101 3 0 127 0 - - -;
+#X floatatom 630 105 3 0 127 0 - - -;
+#X floatatom 876 106 3 0 127 0 - - -;
+#X floatatom 751 106 3 0 127 0 - - -;
+#X floatatom 503 105 3 0 127 0 - - -;
+#X connect 0 0 7 2;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 7 0;
+#X connect 9 0 16 2;
+#X connect 10 0 14 0;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 13 0 11 1;
+#X connect 14 0 15 0;
+#X connect 14 0 16 0;
+#X connect 15 0 16 0;
+#X connect 18 0 25 2;
+#X connect 19 0 23 0;
+#X connect 20 0 19 0;
+#X connect 21 0 20 0;
+#X connect 22 0 20 1;
+#X connect 23 0 24 0;
+#X connect 23 0 25 0;
+#X connect 24 0 25 0;
+#X connect 27 0 59 2;
+#X connect 28 0 32 0;
+#X connect 29 0 28 0;
+#X connect 30 0 29 0;
+#X connect 31 0 29 1;
+#X connect 32 0 33 0;
+#X connect 32 0 59 0;
+#X connect 33 0 59 0;
+#X connect 34 0 60 2;
+#X connect 35 0 39 0;
+#X connect 36 0 35 0;
+#X connect 37 0 36 0;
+#X connect 38 0 36 1;
+#X connect 39 0 40 0;
+#X connect 39 0 60 0;
+#X connect 40 0 60 0;
+#X connect 41 0 61 2;
+#X connect 42 0 46 0;
+#X connect 43 0 42 0;
+#X connect 44 0 43 0;
+#X connect 45 0 43 1;
+#X connect 46 0 47 0;
+#X connect 46 0 61 0;
+#X connect 47 0 61 0;
+#X connect 48 0 62 2;
+#X connect 49 0 53 0;
+#X connect 50 0 49 0;
+#X connect 51 0 50 0;
+#X connect 52 0 50 1;
+#X connect 53 0 54 0;
+#X connect 53 0 62 0;
+#X connect 54 0 62 0;
+#X connect 63 0 68 2;
+#X connect 64 0 69 2;
+#X connect 65 0 69 0;
+#X connect 70 0 72 2;
+#X connect 71 0 72 0;
+#X connect 78 0 68 0;
+#X connect 79 0 80 2;
+#X connect 82 0 80 0;
+#X connect 88 0 92 0;
+#X connect 89 0 88 0;
+#X connect 90 0 89 1;
+#X connect 91 0 89 0;
+#X connect 92 0 80 0;
+#X connect 92 0 82 0;
+#X connect 93 0 5 1;
+#X connect 94 0 14 1;
+#X connect 95 0 23 1;
+#X connect 96 0 39 1;
+#X connect 97 0 53 1;
+#X connect 98 0 46 1;
+#X connect 99 0 32 1;
+#X restore 6 14 pd filter;
+#N canvas 566 101 570 222 amp 0;
+#X floatatom 107 143 2 0 0 0 - midich -;
+#X obj 47 105 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 47 83 spigot;
+#X obj 46 10 r rndctl;
+#X obj 85 37 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 48 124 random 127;
+#X obj 8 11 vsl 30 175 0 127 0 0 empty a empty 0 -8 0 8 -261338 -1
+-1 0 0;
+#X floatatom 234 142 2 0 0 0 - midich -;
+#X obj 174 104 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 174 82 spigot;
+#X obj 173 9 r rndctl;
+#X obj 212 36 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 175 123 random 127;
+#X obj 135 10 vsl 30 175 0 127 0 0 empty d empty 0 -8 0 8 -261338 -1
+-1 14500 0;
+#X floatatom 356 143 2 0 0 0 - midich -;
+#X obj 296 105 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 296 83 spigot;
+#X obj 295 10 r rndctl;
+#X obj 334 37 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 297 124 random 127;
+#X obj 257 11 vsl 30 175 0 127 0 0 empty s empty 0 -8 0 8 -261338 -1
+-1 5900 0;
+#X floatatom 480 143 2 0 0 0 - midich -;
+#X obj 420 105 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 420 83 spigot;
+#X obj 419 10 r rndctl;
+#X obj 458 37 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 421 124 random 127;
+#X obj 381 11 vsl 30 175 0 127 0 0 empty r empty 0 -8 0 8 -261338 -1
+-1 14400 0;
+#X text 58 179 attack;
+#X text 186 178 decay;
+#X text 307 179 sustain;
+#X text 431 179 release;
+#X obj 48 161 ctlout 73;
+#X obj 176 160 ctlout 36;
+#X obj 298 161 ctlout 37;
+#X obj 421 161 ctlout 72;
+#X connect 0 0 32 2;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 6 0;
+#X connect 5 0 32 0;
+#X connect 6 0 32 0;
+#X connect 7 0 33 2;
+#X connect 8 0 12 0;
+#X connect 9 0 8 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 1;
+#X connect 12 0 13 0;
+#X connect 12 0 33 0;
+#X connect 13 0 33 0;
+#X connect 14 0 34 2;
+#X connect 15 0 19 0;
+#X connect 16 0 15 0;
+#X connect 17 0 16 0;
+#X connect 18 0 16 1;
+#X connect 19 0 20 0;
+#X connect 19 0 34 0;
+#X connect 20 0 34 0;
+#X connect 21 0 35 2;
+#X connect 22 0 26 0;
+#X connect 23 0 22 0;
+#X connect 24 0 23 0;
+#X connect 25 0 23 1;
+#X connect 26 0 27 0;
+#X connect 26 0 35 0;
+#X connect 27 0 35 0;
+#X restore 6 36 pd amp;
+#N canvas 640 101 669 405 oscs 1;
+#X floatatom 296 146 2 0 0 0 - midich -;
+#X obj 236 108 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 236 86 spigot;
+#X obj 235 13 r rndctl;
+#X obj 274 40 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X floatatom 423 145 2 0 0 0 - midich -;
+#X obj 363 107 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 363 85 spigot;
+#X obj 362 12 r rndctl;
+#X obj 401 39 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 364 126 random 127;
+#X obj 324 13 vsl 30 175 0 127 0 0 empty oscmix empty 0 -8 0 8 -212954
+-1 -1 6200 0;
+#X obj 237 164 ctlout 35;
+#X obj 365 163 ctlout 8;
+#X text 241 182 osc sync;
+#X text 370 181 osc mix;
+#X obj 195 69 vradio 30 1 0 4 sync empty empty 0 -6 0 8 -212954 -1
+-1 1;
+#X obj 237 127 random 4;
+#X text 160 103 sync;
+#X text 161 135 ring;
+#X text 161 165 both;
+#X text 160 75 none;
+#X floatatom 138 146 2 0 0 0 - midich -;
+#X obj 78 108 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 78 86 spigot;
+#X obj 77 13 r rndctl;
+#X obj 116 40 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 79 127 random 127;
+#X obj 39 14 vsl 30 175 0 127 0 1 empty pulsewidth empty 0 -8 0 8 -212954
+-1 -1 4400 0;
+#X text 79 182 pulsewidth;
+#X obj 79 164 ctlout 79;
+#X floatatom 154 329 2 0 0 0 - midich -;
+#X obj 94 291 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 94 269 spigot;
+#X obj 94 200 r rndctl;
+#X obj 132 223 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 43 251 vradio 30 1 0 4 wav1 empty empty 0 -6 0 8 -4065 -1 -1
+3;
+#X obj 95 310 random 4;
+#X obj 96 347 ctlout 30;
+#X text 94 364 osc1 wave;
+#X text 13 257 sqr;
+#X text 13 286 saw;
+#X text 13 317 tri;
+#X text 13 343 sin;
+#X floatatom 302 330 2 0 0 0 - midich -;
+#X obj 242 292 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 242 270 spigot;
+#X obj 242 203 r rndctl;
+#X obj 280 224 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 201 253 vradio 30 1 0 4 wav2 empty empty 0 -6 0 8 -106484 -1
+-1 0;
+#X obj 243 311 random 4;
+#X text 174 260 sqr;
+#X text 174 289 saw;
+#X text 174 320 tri;
+#X obj 243 348 ctlout 31;
+#X text 242 365 osc2 wave;
+#X floatatom 423 333 2 0 0 0 - midich -;
+#X obj 363 295 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 363 273 spigot;
+#X obj 362 200 r rndctl;
+#X obj 401 227 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 364 314 random 127;
+#X obj 324 201 vsl 30 175 0 127 0 0 empty semi empty 0 -8 0 8 -106484
+-1 -1 8769 0;
+#X text 364 369 osc2 semi;
+#X obj 365 351 ctlout 78;
+#X floatatom 549 147 2 0 0 0 - midich -;
+#X obj 489 109 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 489 87 spigot;
+#X obj 488 14 r rndctl;
+#X obj 527 41 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 490 128 random 127;
+#X obj 450 15 vsl 30 175 0 127 0 0 empty fm empty 0 -8 0 8 -212954
+-1 -1 2500 0;
+#X obj 491 165 ctlout 70;
+#X text 491 183 fm amount;
+#X floatatom 548 334 2 0 0 0 - midich -;
+#X obj 488 296 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 488 274 spigot;
+#X obj 487 201 r rndctl;
+#X obj 526 228 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 489 315 random 127;
+#X obj 449 202 vsl 30 175 0 127 0 0 empty fine empty 0 -8 0 8 -106484
+-1 -1 0 0;
+#X obj 490 352 ctlout 33;
+#X text 489 370 osc2 fine;
+#X floatatom 635 246 2 0 0 0 - midich -;
+#X text 576 282 osc2 track;
+#X obj 577 264 ctlout 34;
+#X obj 576 228 tgl 30 0 empty trk empty 0 -6 0 8 -106484 -1 -1 1 1
+;
+#X text 174 346 rnd;
+#X floatatom 36 205 5 0 0 0 - - -;
+#X floatatom 127 110 3 0 127 0 - - -;
+#X floatatom 413 109 3 0 127 0 - - -;
+#X floatatom 540 111 3 0 127 0 - - -;
+#X floatatom 536 297 3 0 127 0 - - -;
+#X floatatom 411 297 3 0 127 0 - - -;
+#X connect 0 0 12 2;
+#X connect 1 0 17 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 13 2;
+#X connect 6 0 10 0;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 1;
+#X connect 10 0 11 0;
+#X connect 10 0 13 0;
+#X connect 11 0 13 0;
+#X connect 16 0 12 0;
+#X connect 17 0 12 0;
+#X connect 17 0 16 0;
+#X connect 22 0 30 2;
+#X connect 23 0 27 0;
+#X connect 24 0 23 0;
+#X connect 25 0 24 0;
+#X connect 26 0 24 1;
+#X connect 27 0 28 0;
+#X connect 28 0 30 0;
+#X connect 28 0 88 0;
+#X connect 31 0 38 2;
+#X connect 32 0 37 0;
+#X connect 33 0 32 0;
+#X connect 34 0 33 0;
+#X connect 35 0 33 1;
+#X connect 36 0 38 0;
+#X connect 37 0 36 0;
+#X connect 37 0 38 0;
+#X connect 44 0 54 2;
+#X connect 45 0 50 0;
+#X connect 46 0 45 0;
+#X connect 47 0 46 0;
+#X connect 48 0 46 1;
+#X connect 49 0 54 0;
+#X connect 50 0 49 0;
+#X connect 50 0 54 0;
+#X connect 56 0 64 2;
+#X connect 57 0 61 0;
+#X connect 58 0 57 0;
+#X connect 59 0 58 0;
+#X connect 60 0 58 1;
+#X connect 61 0 62 0;
+#X connect 61 0 64 0;
+#X connect 62 0 64 0;
+#X connect 65 0 72 2;
+#X connect 66 0 70 0;
+#X connect 67 0 66 0;
+#X connect 68 0 67 0;
+#X connect 69 0 67 1;
+#X connect 70 0 71 0;
+#X connect 70 0 72 0;
+#X connect 71 0 72 0;
+#X connect 74 0 81 2;
+#X connect 75 0 79 0;
+#X connect 76 0 75 0;
+#X connect 77 0 76 0;
+#X connect 78 0 76 1;
+#X connect 79 0 80 0;
+#X connect 79 0 81 0;
+#X connect 80 0 81 0;
+#X connect 83 0 85 2;
+#X connect 86 0 85 0;
+#X connect 89 0 27 1;
+#X connect 90 0 10 1;
+#X connect 91 0 70 1;
+#X connect 92 0 79 1;
+#X connect 93 0 61 1;
+#X restore 5 58 pd oscs;
+#N canvas 4 101 627 469 lfo 1;
+#X floatatom 117 143 2 0 0 0 - midich -;
+#X obj 57 105 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 57 83 spigot;
+#X obj 56 10 r rndctl;
+#X obj 95 37 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 58 124 random 127;
+#X obj 18 11 vsl 30 175 0 127 0 0 empty l1r empty 0 -8 0 8 -2065 -1
+-1 0 0;
+#X text 59 179 lfo1 rate;
+#X obj 59 161 ctlout 19;
+#X obj 204 106 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 204 84 spigot;
+#X obj 203 11 r rndctl;
+#X obj 242 38 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 165 11 vradio 30 1 0 5 empty empty empty 0 -6 0 8 -2065 -1 -1
+0;
+#X obj 205 162 ctlout 20;
+#X text 204 180 lfo1 wave;
+#X obj 205 125 random 5;
+#X floatatom 264 143 2 0 0 0 - midich -;
+#X text 137 136 sin;
+#X text 137 47 saw;
+#X text 138 77 tri;
+#X text 138 19 rnd;
+#X text 136 107 sqr;
+#X obj 363 107 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 363 85 spigot;
+#X obj 362 12 r rndctl;
+#X obj 401 39 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 324 12 vradio 30 1 0 5 empty empty empty 0 -6 0 8 -2065 -1 -1
+0;
+#X obj 364 126 random 5;
+#X floatatom 423 144 2 0 0 0 - midich -;
+#X obj 364 163 ctlout 21;
+#X text 295 19 pw;
+#X text 286 49 filt;
+#X text 286 78 osc2;
+#X text 280 108 osc1&2;
+#X text 295 137 fm;
+#X text 363 180 lfo1 dest;
+#X floatatom 118 367 2 0 0 0 - midich -;
+#X obj 58 329 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 58 307 spigot;
+#X obj 57 234 r rndctl;
+#X obj 96 261 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 59 348 random 127;
+#X obj 19 235 vsl 30 175 0 127 0 0 empty l2r empty 0 -8 0 8 -2049 -1
+-1 0 0;
+#X text 60 403 lfo2 rate;
+#X obj 60 385 ctlout 23;
+#X floatatom 556 143 2 0 0 0 - midich -;
+#X obj 496 105 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 496 83 spigot;
+#X obj 495 10 r rndctl;
+#X obj 534 37 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 497 124 random 127;
+#X obj 457 11 vsl 30 175 0 127 0 0 empty l1a empty 0 -8 0 8 -2065 -1
+-1 0 0;
+#X text 498 179 lfo1 amt;
+#X obj 498 161 ctlout 22;
+#X floatatom 557 367 2 0 0 0 - midich -;
+#X obj 497 329 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 497 307 spigot;
+#X obj 496 234 r rndctl;
+#X obj 535 261 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 498 348 random 127;
+#X obj 458 235 vsl 30 175 0 127 0 0 empty l2a empty 0 -8 0 8 -2049
+-1 -1 0 0;
+#X obj 314 328 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 314 306 spigot;
+#X obj 313 233 r rndctl;
+#X obj 352 260 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 275 233 vradio 20 1 0 8 empty empty empty 0 -6 0 8 -2049 -1
+-1 0;
+#X text 314 401 lfo2 dest;
+#X obj 315 384 ctlout 24;
+#X floatatom 373 365 2 0 0 0 - midich -;
+#X text 215 235 arp down;
+#X text 227 254 arp up;
+#X text 220 275 arp u&d;
+#X text 222 295 lfo amp;
+#X text 221 315 lfo osc;
+#X text 221 336 arp rnd;
+#X text 214 355 arp echo;
+#X text 200 375 lfo filter;
+#X obj 315 347 random 8;
+#X text 498 403 lfo2 amt/range;
+#X obj 499 385 ctlout 25;
+#X connect 0 0 8 2;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 6 0;
+#X connect 5 0 8 0;
+#X connect 6 0 8 0;
+#X connect 9 0 16 0;
+#X connect 10 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 10 1;
+#X connect 13 0 14 0;
+#X connect 16 0 13 0;
+#X connect 16 0 14 0;
+#X connect 17 0 14 2;
+#X connect 23 0 28 0;
+#X connect 24 0 23 0;
+#X connect 25 0 24 0;
+#X connect 26 0 24 1;
+#X connect 27 0 30 0;
+#X connect 28 0 27 0;
+#X connect 28 0 30 0;
+#X connect 29 0 30 2;
+#X connect 37 0 45 2;
+#X connect 38 0 42 0;
+#X connect 39 0 38 0;
+#X connect 40 0 39 0;
+#X connect 41 0 39 1;
+#X connect 42 0 43 0;
+#X connect 42 0 45 0;
+#X connect 43 0 45 0;
+#X connect 46 0 54 2;
+#X connect 47 0 51 0;
+#X connect 48 0 47 0;
+#X connect 49 0 48 0;
+#X connect 50 0 48 1;
+#X connect 51 0 52 0;
+#X connect 51 0 54 0;
+#X connect 52 0 54 0;
+#X connect 55 0 80 2;
+#X connect 56 0 60 0;
+#X connect 57 0 56 0;
+#X connect 58 0 57 0;
+#X connect 59 0 57 1;
+#X connect 60 0 61 0;
+#X connect 60 0 80 0;
+#X connect 61 0 80 0;
+#X connect 62 0 78 0;
+#X connect 63 0 62 0;
+#X connect 64 0 63 0;
+#X connect 65 0 63 1;
+#X connect 66 0 68 0;
+#X connect 69 0 68 2;
+#X connect 78 0 66 0;
+#X connect 78 0 68 0;
+#X restore 5 80 pd lfo;
+#N canvas 4 625 628 223 modenv 1;
+#X floatatom 124 154 2 0 0 0 - midich -;
+#X obj 64 116 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 64 94 spigot;
+#X obj 63 21 r rndctl;
+#X obj 102 48 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 65 135 random 127;
+#X obj 25 22 vsl 30 175 0 127 0 0 empty ma empty 0 -8 0 8 -258081 -1
+-1 6700 0;
+#X obj 66 172 ctlout 26;
+#X text 77 190 attack;
+#X floatatom 244 153 2 0 0 0 - midich -;
+#X obj 184 115 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 184 93 spigot;
+#X obj 183 20 r rndctl;
+#X obj 222 47 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 185 134 random 127;
+#X obj 145 21 vsl 30 175 0 127 0 0 empty md empty 0 -8 0 8 -258081
+-1 -1 12400 0;
+#X text 197 189 decay;
+#X obj 186 171 ctlout 27;
+#X floatatom 366 152 2 0 0 0 - midich -;
+#X obj 305 114 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 305 92 spigot;
+#X obj 304 19 r rndctl;
+#X obj 343 46 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 306 133 random 127;
+#X obj 266 20 vsl 30 175 0 127 0 0 empty mamt empty 0 -8 0 8 -258081
+-1 -1 10100 0;
+#X obj 307 170 ctlout 29;
+#X text 318 188 amount;
+#X obj 456 89 spigot;
+#X obj 455 16 r rndctl;
+#X obj 494 43 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 456 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 419 17 vradio 30 1 0 4 empty empty empty 0 -6 0 8 -258081 -1
+-1 1;
+#X floatatom 503 152 2 0 0 0 - midich -;
+#X text 456 188 dest;
+#X obj 445 170 ctlout 28;
+#X obj 457 131 random 4;
+#X text 385 113 none;
+#X text 388 24 osc2;
+#X text 397 53 fm;
+#X text 397 83 pw;
+#X connect 0 0 7 2;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 7 0;
+#X connect 9 0 17 2;
+#X connect 10 0 14 0;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 13 0 11 1;
+#X connect 14 0 15 0;
+#X connect 14 0 17 0;
+#X connect 15 0 17 0;
+#X connect 18 0 25 2;
+#X connect 19 0 23 0;
+#X connect 20 0 19 0;
+#X connect 21 0 20 0;
+#X connect 22 0 20 1;
+#X connect 23 0 24 0;
+#X connect 23 0 25 0;
+#X connect 24 0 25 0;
+#X connect 27 0 30 0;
+#X connect 28 0 27 0;
+#X connect 29 0 27 1;
+#X connect 30 0 35 0;
+#X connect 31 0 34 0;
+#X connect 32 0 34 2;
+#X connect 35 0 31 0;
+#X connect 35 0 34 0;
+#X restore 6 102 pd modenv;
+#N canvas 858 589 263 225 global 1;
+#X floatatom 72 17 2 0 0 0 - midich -;
+#X obj 13 16 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 14 35 ctlout 16;
+#X text 23 54 unison;
+#X floatatom 73 148 2 0 0 0 - midich -;
+#X text 14 184 poly/leg/mono;
+#X obj 15 166 ctlout 15;
+#X floatatom 219 149 2 0 0 0 - midich -;
+#X obj 159 111 bng 15 250 50 0 empty empty empty 0 -6 0 8 -257472 -258699
+-1;
+#X obj 159 89 spigot;
+#X obj 158 16 r rndctl;
+#X obj 197 43 tgl 30 0 empty all empty 0 -6 0 8 -62784 -1 -1 0 1;
+#X obj 160 130 random 127;
+#X obj 120 17 vsl 30 175 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X text 161 185 porta time;
+#X obj 161 167 ctlout 5;
+#X obj 16 144 hradio 15 1 0 3 empty empty empty 0 -6 0 8 -262144 -1
+-1 0;
+#X connect 0 0 2 2;
+#X connect 1 0 2 0;
+#X connect 4 0 6 2;
+#X connect 7 0 15 2;
+#X connect 8 0 12 0;
+#X connect 9 0 8 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 1;
+#X connect 12 0 13 0;
+#X connect 12 0 15 0;
+#X connect 13 0 15 0;
+#X connect 16 0 6 0;
+#X restore 6 122 pd global;
+#N canvas 560 306 133 351 presets 0;
+#X msg 10 9 \; cutoff 127 \; resonance 0 \; filtenv 0 \; fa 0 \; fd
+0 \; fs 0 \; fr 0 \; l1r 0 \; l1a 0 \; l2r 0 \; l2a 0 \; pulsewidth
+64 \; oscmix 64 \; trk 1 \; fm 0 \; semi 64 \; fine 0 \; a 2 \; d 16
+\; s 127 \; r 64 \; ma 0 \; md 0 \; mamt 0 \;;
+#X restore 6 143 pd presets;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;

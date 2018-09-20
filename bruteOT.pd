@@ -1,0 +1,16 @@
+#N canvas 2678 699 450 321 10;
+#X obj 26 73 brute;
+#X obj 26 16 notein 14;
+#X obj 26 43 stripnote;
+#X obj 27 245 *~;
+#X obj 27 267 dac~ 1;
+#X obj 43 222 sig~;
+#X obj 43 198 / 127;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 2 0 0 0;
+#X connect 2 1 6 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 1;
+#X connect 6 0 5 0;

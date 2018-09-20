@@ -1,0 +1,12 @@
+#N canvas 629 288 450 300 10;
+#X obj 66 86 inlet~;
+#X obj 199 87 inlet~;
+#X obj 333 86 inlet~;
+#X obj 66 138 outlet~;
+#X obj 66 111 expr~ $v1*min(1 \, 2*(1-$v3))+$v2*min(1 \, 2*$v3);
+#X text 170 48 linear crossfade;
+#X text 376 85 0 - 1;
+#X connect 0 0 4 0;
+#X connect 1 0 4 1;
+#X connect 2 0 4 2;
+#X connect 4 0 3 0;

@@ -1,0 +1,12 @@
+#N canvas 563 518 462 280 10;
+#X obj 74 104 expr~ ($v1*(1-$v3*$v3)) + ($v2*($v3*$v3));
+#X obj 74 79 inlet~;
+#X obj 195 77 inlet~;
+#X obj 317 79 inlet~;
+#X obj 74 130 outlet~;
+#X text 153 42 equal power crossfade;
+#X text 364 78 0 - 1;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;

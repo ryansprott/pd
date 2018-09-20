@@ -1,0 +1,124 @@
+#N canvas 663 512 415 300 10;
+#X obj -194 55 vsl 20 96 0 1 0 0 \$0-sl0 \$1-sl0 empty 0 -9 0 10 -261234
+-1 -1 0 0;
+#X obj -195 272 table \$0-vals 16;
+#X obj -170 55 vsl 20 96 0 1 0 0 \$0-sl1 \$1-sl1 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -146 55 vsl 20 96 0 1 0 0 \$0-sl2 \$1-sl2 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -122 55 vsl 20 96 0 1 0 0 \$0-sl3 \$1-sl3 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -97 55 vsl 20 96 0 1 0 0 \$0-sl4 \$1-sl4 empty 0 -9 0 10 -261234
+-1 -1 0 0;
+#X obj -73 55 vsl 20 96 0 1 0 0 \$0-sl5 \$1-sl5 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -49 55 vsl 20 96 0 1 0 0 \$0-sl6 \$1-sl6 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -25 55 vsl 20 96 0 1 0 0 \$0-sl7 \$1-sl7 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -1 55 vsl 20 96 0 1 0 0 \$0-sl8 \$1-sl8 empty 0 -9 0 10 -261234
+-1 -1 0 0;
+#X obj 23 55 vsl 20 96 0 1 0 0 \$0-sl9 \$1-sl9 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj 47 55 vsl 20 96 0 1 0 0 \$0-sl10 \$1-sl10 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj 71 55 vsl 20 96 0 1 0 0 \$0-sl11 \$1-sl11 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj 96 55 vsl 20 96 0 1 0 0 \$0-sl12 \$1-sl12 empty 0 -9 0 10 -261234
+-1 -1 0 0;
+#X obj 120 55 vsl 20 96 0 1 0 0 \$0-sl13 \$1-sl13 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj 144 55 vsl 20 96 0 1 0 0 \$0-sl14 \$1-sl14 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj 168 55 vsl 20 96 0 1 0 0 \$0-sl15 \$1-sl15 empty 0 -9 0 10 -204800
+-1 -1 0 0;
+#X obj -59 228 mod 16;
+#X obj -59 250 tabread \$0-vals;
+#X obj -59 206 inlet;
+#N canvas 129 622 492 332 sliders 0;
+#X obj -162 13 r \$0-sl0;
+#X obj -51 10 r \$0-sl1;
+#X obj 59 13 r \$0-sl2;
+#X obj 172 8 r \$0-sl3;
+#X obj -162 37 pack f 0;
+#X obj -162 61 tabwrite \$0-vals;
+#X obj -51 35 pack f 1;
+#X obj 59 36 pack f 2;
+#X obj -51 60 tabwrite \$0-vals;
+#X obj 59 59 tabwrite \$0-vals;
+#X obj 172 33 pack f 3;
+#X obj 172 58 tabwrite \$0-vals;
+#X obj -162 89 r \$0-sl4;
+#X obj -51 86 r \$0-sl5;
+#X obj 59 89 r \$0-sl6;
+#X obj 172 84 r \$0-sl7;
+#X obj -162 113 pack f 4;
+#X obj -162 137 tabwrite \$0-vals;
+#X obj -51 111 pack f 5;
+#X obj 59 112 pack f 6;
+#X obj -51 136 tabwrite \$0-vals;
+#X obj 59 135 tabwrite \$0-vals;
+#X obj 172 109 pack f 7;
+#X obj 172 134 tabwrite \$0-vals;
+#X obj -162 163 r \$0-sl8;
+#X obj -51 160 r \$0-sl9;
+#X obj 59 163 r \$0-sl10;
+#X obj 172 158 r \$0-sl11;
+#X obj -162 187 pack f 8;
+#X obj -162 211 tabwrite \$0-vals;
+#X obj -51 185 pack f 9;
+#X obj 59 186 pack f 10;
+#X obj -51 210 tabwrite \$0-vals;
+#X obj 59 209 tabwrite \$0-vals;
+#X obj 172 183 pack f 11;
+#X obj 172 208 tabwrite \$0-vals;
+#X obj -162 239 r \$0-sl12;
+#X obj -51 236 r \$0-sl13;
+#X obj 59 239 r \$0-sl14;
+#X obj 172 234 r \$0-sl15;
+#X obj -162 263 pack f 12;
+#X obj -162 287 tabwrite \$0-vals;
+#X obj -51 261 pack f 13;
+#X obj 59 262 pack f 14;
+#X obj -51 286 tabwrite \$0-vals;
+#X obj 59 285 tabwrite \$0-vals;
+#X obj 172 259 pack f 15;
+#X obj 172 284 tabwrite \$0-vals;
+#X connect 0 0 4 0;
+#X connect 1 0 6 0;
+#X connect 2 0 7 0;
+#X connect 3 0 10 0;
+#X connect 4 0 5 0;
+#X connect 6 0 8 0;
+#X connect 7 0 9 0;
+#X connect 10 0 11 0;
+#X connect 12 0 16 0;
+#X connect 13 0 18 0;
+#X connect 14 0 19 0;
+#X connect 15 0 22 0;
+#X connect 16 0 17 0;
+#X connect 18 0 20 0;
+#X connect 19 0 21 0;
+#X connect 22 0 23 0;
+#X connect 24 0 28 0;
+#X connect 25 0 30 0;
+#X connect 26 0 31 0;
+#X connect 27 0 34 0;
+#X connect 28 0 29 0;
+#X connect 30 0 32 0;
+#X connect 31 0 33 0;
+#X connect 34 0 35 0;
+#X connect 36 0 40 0;
+#X connect 37 0 42 0;
+#X connect 38 0 43 0;
+#X connect 39 0 46 0;
+#X connect 40 0 41 0;
+#X connect 42 0 44 0;
+#X connect 43 0 45 0;
+#X connect 46 0 47 0;
+#X restore -195 244 pd sliders;
+#X obj -59 272 outlet;
+#X connect 17 0 18 0;
+#X connect 18 0 21 0;
+#X connect 19 0 17 0;
+#X coords 0 -1 1 1 395 115 2 -200 45;
